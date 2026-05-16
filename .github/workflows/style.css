@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px;
+}
+
+/* CATALOG */
+.title {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* LOGIN */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-box input, select {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* DASHBOARD */
+#customerPanel, #staffPanel {
+  margin: 20px;
+}

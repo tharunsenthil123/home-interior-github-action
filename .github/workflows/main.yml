@@ -1,4 +1,4 @@
-name: Deploy Interior Dashboard Website
+name: Deploy Interior Website
 
 on:
   push:
@@ -15,16 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v4
-
-      - name: ⚙️ Setup GitHub Pages
-        uses: actions/configure-pages@v4
-
-      - name: 📦 Upload Project Files (Artifact)
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: .   # includes HTML, CSS, JS, images, dashboard, login
-
-      - name: 🚀 Deploy Website
-        uses: actions/deploy-pages@v4
+          path: .
+      - uses: actions/deploy-pages@v4
