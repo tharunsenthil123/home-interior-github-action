@@ -1,70 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Dream Interiors</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
-    <h1>Dream Interiors</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#designs">Designs</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <h1>Dashboard</h1>
+  <button onclick="logout()">Logout</button>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="overlay">
-        <h2>Make Your Home Beautiful</h2>
-        <p>Luxury Interior Designs for Modern Living</p>
-        <button onclick="scrollToDesigns()">Explore Now</button>
-    </div>
-</section>
+<section class="dashboard">
 
-<!-- DESIGNS -->
-<section id="designs" class="designs">
-    <h2>Our Designs</h2>
+  <h2 id="welcome"></h2>
+
+  <!-- CUSTOMER VIEW -->
+  <div id="customerPanel" class="panel">
+    <h3>Your Designs</h3>
 
     <div class="grid">
+      <div class="card">
+        <img src="images/livingroom.jpg">
+        <p>Living Room</p>
+      </div>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?luxury-living-room">
-            <div class="card-content">
-                <h3>Living Room</h3>
-                <p>Modern elegant space</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?modern-bedroom">
-            <div class="card-content">
-                <h3>Bedroom</h3>
-                <p>Comfort & luxury</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?modular-kitchen">
-            <div class="card-content">
-                <h3>Kitchen</h3>
-                <p>Smart modular design</p>
-            </div>
-        </div>
-
+      <div class="card">
+        <img src="images/bedroom.jpg">
+        <p>Bedroom</p>
+      </div>
     </div>
-</section>
+  </div>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <button onclick="submitForm()">Send Message</button>
+  <!-- STAFF VIEW -->
+  <div id="staffPanel" class="panel">
+    <h3>Staff Control Panel</h3>
+    <button onclick="addDesign()">➕ Add New Design</button>
+    <button onclick="alert('View bookings')">📋 View Bookings</button>
+  </div>
+
 </section>
 
 <script src="script.js"></script>
