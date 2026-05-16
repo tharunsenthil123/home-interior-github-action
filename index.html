@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Interior Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Dream Interiors</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#designs">Designs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Design Your Dream Home</h2>
+        <p>Modern • Elegant • Affordable</p>
+        <button onclick="showMessage()">Explore Designs</button>
+    </section>
+
+    <!-- Designs Section -->
+    <section id="designs" class="designs">
+        <h2>Our Designs</h2>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?living-room" alt="">
+            <h3>Living Room</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?bedroom" alt="">
+            <h3>Bedroom</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?kitchen" alt="">
+            <h3>Kitchen</h3>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button onclick="submitForm()">Submit</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
