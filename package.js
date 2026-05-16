@@ -1,7 +1,9 @@
-function showMessage() {
-    alert("Explore our beautiful interior designs!");
+function submitForm() {
+    alert("🔥 Message Sent Successfully!");
 }
 
-function submitForm() {
-    alert("Form submitted successfully!");
+function scrollToDesigns() {
+    document.getElementById("designs").scrollIntoView({
+        behavior: "smooth"
+    });
 }

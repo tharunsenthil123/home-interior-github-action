@@ -2,56 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Interior Design</title>
+    <title>Dream Interiors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <h1>Dream Interiors</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#designs">Designs</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1>Dream Interiors</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#designs">Designs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Design Your Dream Home</h2>
-        <p>Modern • Elegant • Affordable</p>
-        <button onclick="showMessage()">Explore Designs</button>
-    </section>
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h2>Make Your Home Beautiful</h2>
+        <p>Luxury Interior Designs for Modern Living</p>
+        <button onclick="scrollToDesigns()">Explore Now</button>
+    </div>
+</section>
 
-    <!-- Designs Section -->
-    <section id="designs" class="designs">
-        <h2>Our Designs</h2>
+<!-- DESIGNS -->
+<section id="designs" class="designs">
+    <h2>Our Designs</h2>
+
+    <div class="grid">
 
         <div class="card">
-            <img src="https://source.unsplash.com/300x200/?living-room" alt="">
-            <h3>Living Room</h3>
+            <img src="https://source.unsplash.com/400x300/?luxury-living-room">
+            <div class="card-content">
+                <h3>Living Room</h3>
+                <p>Modern elegant space</p>
+            </div>
         </div>
 
         <div class="card">
-            <img src="https://source.unsplash.com/300x200/?bedroom" alt="">
-            <h3>Bedroom</h3>
+            <img src="https://source.unsplash.com/400x300/?modern-bedroom">
+            <div class="card-content">
+                <h3>Bedroom</h3>
+                <p>Comfort & luxury</p>
+            </div>
         </div>
 
         <div class="card">
-            <img src="https://source.unsplash.com/300x200/?kitchen" alt="">
-            <h3>Kitchen</h3>
+            <img src="https://source.unsplash.com/400x300/?modular-kitchen">
+            <div class="card-content">
+                <h3>Kitchen</h3>
+                <p>Smart modular design</p>
+            </div>
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <button onclick="submitForm()">Submit</button>
-    </section>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button onclick="submitForm()">Send Message</button>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>

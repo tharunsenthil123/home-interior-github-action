@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Interior Website
 
 on:
   push:
@@ -11,20 +11,20 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 📥 Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: ⚙️ Setup GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      - name: 📦 Upload Website as Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .   # your website files
+          path: .   # uploads entire project (HTML, CSS, JS)
 
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
